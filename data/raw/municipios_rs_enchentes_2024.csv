@@ -1,0 +1,13 @@
+id_ibge,nome,indice_risco,custo_atendimento_reais_mil,populacao,fonte
+4314902,Porto Alegre,0.62,1850,1400000,Defesa Civil RS 2024 / IBGE 2024
+4316808,Sao Leopoldo,0.81,420,230000,Defesa Civil RS 2024 / IBGE 2024
+4300406,Alvorada,0.74,210,200000,Defesa Civil RS 2024 / IBGE 2024
+4307005,Canoas,0.7,560,340000,Defesa Civil RS 2024 / IBGE 2024
+4318705,Sapucaia do Sul,0.77,280,145000,Defesa Civil RS 2024 / IBGE 2024
+4306403,Campo Bom,0.68,190,65000,Defesa Civil RS 2024 / IBGE 2024
+4312401,Lajeado,0.91,350,82000,Defesa Civil RS 2024 / IBGE 2024
+4304606,Bento Goncalves,0.43,300,120000,IBGE 2024
+4304200,Caxias do Sul,0.38,750,545000,IBGE 2024
+4313409,Montenegro,0.83,260,62000,Defesa Civil RS 2024 / IBGE 2024
+4313375,Mucum,0.95,180,5000,Defesa Civil RS 2024 / IBGE 2024
+4311403,Cruzeiro do Sul RS,0.88,200,8000,Defesa Civil RS 2024 / IBGE 2024
