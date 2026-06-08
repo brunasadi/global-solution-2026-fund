@@ -10,7 +10,7 @@ Implementa:
   - Fila de prioridade via heapq
 """
 
-from __future__ import annotations
+from _future_ import annotations
 import heapq
 from collections import deque
 from typing import Optional, List, Tuple, Dict, Set
@@ -54,7 +54,7 @@ class Grafo:
       - Vizinhos de v:     O(grau(v))
     """
 
-    def __init__(self):
+    def _init_(self):
         # dict: id_municipio -> tupla do vértice
         self.vertices: Dict[int, tuple] = {}
         # dict: id_municipio -> lista de (id_vizinho, peso)
@@ -135,7 +135,7 @@ class Grafo:
                     s.adicionar_aresta(uid, viz, peso)
         return s
 
-    def __repr__(self):
+    def _repr_(self):
         return (f"Grafo(vértices={self.num_vertices()}, "
                 f"arestas={self.num_arestas()})")
 
@@ -149,13 +149,13 @@ class Node:
     Nó da Árvore Binária de Busca.
     Chave = índice de risco (float); valor = tupla do município.
     """
-    def __init__(self, vertice: tuple):
+    def _init_(self, vertice: tuple):
         self.risco: float = risco_v(vertice)
         self.vertice: tuple = vertice
         self.esquerda: Optional[Node] = None
         self.direita: Optional[Node] = None
 
-    def __repr__(self):
+    def _repr_(self):
         return f"Node(risco={self.risco}, mun={nome_v(self.vertice)})"
 
 
@@ -177,7 +177,7 @@ class BinarySearchTree:
       - Remoção:   O(log N)
     """
 
-    def __init__(self):
+    def _init_(self):
         self.raiz: Optional[Node] = None
         self._tamanho: int = 0
 
@@ -313,7 +313,7 @@ class BinarySearchTree:
         """Retorna municípios com risco >= limiar. Atalho conveniente."""
         return self.buscar(limiar, 1.0)
 
-    def __repr__(self):
+    def _repr_(self):
         return (f"BST(tamanho={self._tamanho}, "
                 f"altura={self.altura()}, {self.balanceamento()})")
 
@@ -333,7 +333,7 @@ class FilaPrioridade:
       - peek: O(1)
     """
 
-    def __init__(self):
+    def _init_(self):
         self._heap: List[Tuple[float, int]] = []
         self._contador = 0  # desempate FIFO
 
@@ -348,5 +348,5 @@ class FilaPrioridade:
     def vazia(self) -> bool:
         return len(self._heap) == 0
 
-    def __len__(self) -> int:
+    def _len_(self) -> int:
         return len(self._heap)
