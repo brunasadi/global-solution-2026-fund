@@ -84,9 +84,11 @@ story.append(Paragraph("1. Identificacao e Contextualizacao", h1))
 
 id_data = [
     ['RA', 'Nome', 'Turma'],
-    ['XXXXXXX', 'Integrante 1', 'TDSAT'],
-    ['XXXXXXX', 'Integrante 2', 'TDSAT'],
-    ['XXXXXXX', 'Integrante 3', 'TDSAT'],
+    ['561870', 'Bruna Sadi', '2ESA'],
+    ['563671', 'Dennis Generoso', '2ESA'],
+    ['566309', 'Francisco Nogueira', '2ESA'],
+    ['566310', 'Rhariel Permanhani ', '2ESA'],
+    ['563807', 'Sara Marangon', '2ESA'],
 ]
 t = Table(id_data, colWidths=[3*cm, 9*cm, 4*cm])
 t.setStyle(TableStyle([
